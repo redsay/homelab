@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backup Audit Report — {{ report_date }}</title>
+  <style>
+    /* ------------------------------------------------------------------ */
+    /* Reset & base                                                         */
+    /* ------------------------------------------------------------------ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      background: #f0f2f5;
+      color: #212529;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Layout                                                               */
+    /* ------------------------------------------------------------------ */
+    .page-wrapper {
+      max-width: 1100px;
+      margin: 32px auto;
+      padding: 0 16px 48px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Header                                                               */
+    /* ------------------------------------------------------------------ */
+    .report-header {
+      background: #1a1f2e;
+      color: #e9ecef;
+      border-radius: 8px 8px 0 0;
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .report-header__title {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .report-header__subtitle {
+      font-size: 12px;
+      color: #adb5bd;
+      margin-top: 2px;
+    }
+
+    .report-header__meta {
+      text-align: right;
+    }
+
+    .report-header__date {
+      font-size: 13px;
+      color: #adb5bd;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Status badge (header)                                                */
+    /* ------------------------------------------------------------------ */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-top: 6px;
+    }
+
+    .status-badge--ok {
+      background: #1a7f4b;
+      color: #d1fae5;
+    }
+
+    .status-badge--warning {
+      background: #92600a;
+      color: #fef3c7;
+    }
+
+    .status-badge--critical {
+      background: #9b1c1c;
+      color: #fee2e2;
+    }
+
+    .status-badge__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Main content card                                                    */
+    /* ------------------------------------------------------------------ */
+    .card {
+      background: #ffffff;
+      border: 1px solid #dee2e6;
+      border-top: none;
+      padding: 28px 32px;
+    }
+
+    .card:last-child {
+      border-radius: 0 0 8px 8px;
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a1f2e;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e9ecef;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Summary grid                                                         */
+    /* ------------------------------------------------------------------ */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .summary-tile {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 6px;
+      padding: 18px 20px;
+      text-align: center;
+    }
+
+    .summary-tile__value {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .summary-tile__label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      color: #6c757d;
+      font-weight: 600;
+    }
+
+    .summary-tile--total   .summary-tile__value { color: #1a1f2e; }
+    .summary-tile--passed  .summary-tile__value { color: #1a7f4b; }
+    .summary-tile--warned  .summary-tile__value { color: #b45309; }
+    .summary-tile--failed  .summary-tile__value { color: #9b1c1c; }
+
+    /* ------------------------------------------------------------------ */
+    /* Flag cards                                                           */
+    /* ------------------------------------------------------------------ */
+    .flags-section {
+      margin-bottom: 36px;
+    }
+
+    .flag-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .flag-card {
+      border-radius: 6px;
+      padding: 14px 18px;
+      border-left: 5px solid transparent;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4px 16px;
+      align-items: start;
+    }
+
+    .flag-card--critical {
+      background: #fff5f5;
+      border-left-color: #e53e3e;
+    }
+
+    .flag-card--warning {
+      background: #fffbeb;
+      border-left-color: #d97706;
+    }
+
+    .flag-card__header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .flag-card__job-name {
+      font-weight: 700;
+      font-size: 14px;
+      color: #1a1f2e;
+    }
+
+    .flag-severity-pill {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+
+    .flag-severity-pill--critical {
+      background: #fed7d7;
+      color: #9b1c1c;
+    }
+
+    .flag-severity-pill--warning {
+      background: #fef3c7;
+      color: #92600a;
+    }
+
+    .flag-card__reason {
+      font-size: 13px;
+      color: #495057;
+      margin-top: 4px;
+    }
+
+    .flag-card__meta {
+      text-align: right;
+      font-size: 11px;
+      color: #868e96;
+      white-space: nowrap;
+    }
+
+    .flag-card__meta strong {
+      display: block;
+      font-size: 12px;
+      color: #495057;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Job table                                                            */
+    /* ------------------------------------------------------------------ */
+    .job-table-wrapper {
+      overflow-x: auto;
+    }
+
+    table.job-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    table.job-table thead tr {
+      background: #1a1f2e;
+      color: #e9ecef;
+    }
+
+    table.job-table thead th {
+      padding: 11px 14px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      white-space: nowrap;
+    }
+
+    table.job-table thead th:first-child { border-radius: 0; }
+
+    table.job-table tbody tr {
+      border-bottom: 1px solid #e9ecef;
+      transition: background 0.1s;
+    }
+
+    table.job-table tbody tr:hover {
+      background: #f8f9fa;
+    }
+
+    table.job-table tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    table.job-table tbody td {
+      padding: 10px 14px;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .job-name-cell {
+      font-weight: 600;
+      color: #1a1f2e;
+    }
+
+    /* Inline status pills for the table */
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .pill--success {
+      background: #d1fae5;
+      color: #065f46;
+    }
+
+    .pill--warning {
+      background: #fef3c7;
+      color: #92600a;
+    }
+
+    .pill--failed {
+      background: #fee2e2;
+      color: #9b1c1c;
+    }
+
+    .pill--unknown {
+      background: #e9ecef;
+      color: #6c757d;
+    }
+
+    .fail-rate-high   { color: #9b1c1c; font-weight: 700; }
+    .fail-rate-medium { color: #b45309; font-weight: 600; }
+    .fail-rate-low    { color: #1a7f4b; }
+
+    /* ------------------------------------------------------------------ */
+    /* Footer                                                               */
+    /* ------------------------------------------------------------------ */
+    .report-footer {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 11px;
+      color: #adb5bd;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ================================================================ -->
+    <!-- Header                                                             -->
+    <!-- ================================================================ -->
+    <div class="report-header">
+      <div>
+        <div class="report-header__title">Manufacturing Backup Audit</div>
+        <div class="report-header__subtitle">Homelab Infrastructure — Automated Report</div>
+      </div>
+      <div class="report-header__meta">
+        <div class="report-header__date">Report Date: {{ report_date }}</div>
+        {% if overall_status == "OK" %}
+          <span class="status-badge status-badge--ok">
+            <span class="status-badge__dot"></span>All Systems Normal
+          </span>
+        {% elif overall_status == "Warning" %}
+          <span class="status-badge status-badge--warning">
+            <span class="status-badge__dot"></span>Warning
+          </span>
+        {% else %}
+          <span class="status-badge status-badge--critical">
+            <span class="status-badge__dot"></span>Critical
+          </span>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- ================================================================ -->
+    <!-- Summary tiles                                                      -->
+    <!-- ================================================================ -->
+    <div class="card">
+      <div class="section-title">Summary</div>
+      <div class="summary-grid">
+        <div class="summary-tile summary-tile--total">
+          <div class="summary-tile__value">{{ total_jobs }}</div>
+          <div class="summary-tile__label">Total Jobs</div>
+        </div>
+        <div class="summary-tile summary-tile--passed">
+          <div class="summary-tile__value">{{ passed }}</div>
+          <div class="summary-tile__label">Passed</div>
+        </div>
+        <div class="summary-tile summary-tile--warned">
+          <div class="summary-tile__value">{{ warned }}</div>
+          <div class="summary-tile__label">Warned</div>
+        </div>
+        <div class="summary-tile summary-tile--failed">
+          <div class="summary-tile__value">{{ failed }}</div>
+          <div class="summary-tile__label">Failed</div>
+        </div>
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- Flagged jobs (only rendered when there are flags)               -->
+      <!-- ============================================================== -->
+      {% if flags %}
+      <div class="flags-section">
+        <div class="section-title">Flagged Jobs</div>
+        <div class="flag-list">
+          {% for flag in flags %}
+          <div class="flag-card flag-card--{{ flag.severity }}">
+            <div>
+              <div class="flag-card__header">
+                <span class="flag-card__job-name">{{ flag.job_name }}</span>
+                <span class="flag-severity-pill flag-severity-pill--{{ flag.severity }}">
+                  {{ flag.severity }}
+                </span>
+              </div>
+              <div class="flag-card__reason">{{ flag.reason }}</div>
+            </div>
+            <div class="flag-card__meta">
+              <strong>Last Run</strong>
+              {{ flag.last_run_display }}
+              <br />
+              <strong style="margin-top:4px; display:block;">Status</strong>
+              {% if flag.last_status == "Success" %}
+                <span class="pill pill--success">{{ flag.last_status }}</span>
+              {% elif flag.last_status == "Warning" %}
+                <span class="pill pill--warning">{{ flag.last_status }}</span>
+              {% elif flag.last_status == "Failed" %}
+                <span class="pill pill--failed">{{ flag.last_status }}</span>
+              {% else %}
+                <span class="pill pill--unknown">{{ flag.last_status }}</span>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- ============================================================== -->
+      <!-- Full job table                                                   -->
+      <!-- ============================================================== -->
+      <div class="section-title">All Backup Jobs</div>
+      <div class="job-table-wrapper">
+        <table class="job-table">
+          <thead>
+            <tr>
+              <th>Job Name</th>
+              <th>Last Run</th>
+              <th>Status</th>
+              <th>Duration (min)</th>
+              <th>Size (GB)</th>
+              <th>Files</th>
+              <th>Runs</th>
+              <th>Avg Size (GB)</th>
+              <th>Fail Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for job in jobs %}
+            <tr>
+              <td class="job-name-cell">{{ job.job_name }}</td>
+              <td>{{ job.last_run_display }}</td>
+              <td>
+                {% if job.last_status == "Success" %}
+                  <span class="pill pill--success">Success</span>
+                {% elif job.last_status == "Warning" %}
+                  <span class="pill pill--warning">Warning</span>
+                {% elif job.last_status == "Failed" %}
+                  <span class="pill pill--failed">Failed</span>
+                {% else %}
+                  <span class="pill pill--unknown">{{ job.last_status or "Unknown" }}</span>
+                {% endif %}
+              </td>
+              <td>{{ job.last_duration_minutes }}</td>
+              <td>{{ job.last_size_gb_display }}</td>
+              <td>{{ job.last_files_transferred }}</td>
+              <td>{{ job.total_runs }}</td>
+              <td>{{ job.avg_size_gb_display }}</td>
+              <td>
+                {% if job.failure_rate_pct >= 25 %}
+                  <span class="fail-rate-high">{{ job.failure_rate_pct }}%</span>
+                {% elif job.failure_rate_pct >= 10 %}
+                  <span class="fail-rate-medium">{{ job.failure_rate_pct }}%</span>
+                {% else %}
+                  <span class="fail-rate-low">{{ job.failure_rate_pct }}%</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div><!-- /.card -->
+
+    <div class="report-footer">
+      Generated by backup-auditor &mdash; {{ report_date }}
+    </div>
+
+  </div><!-- /.page-wrapper -->
+</body>
+</html>

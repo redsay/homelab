@@ -1,0 +1,49 @@
+---
+# provision_local.yml — Provision a fresh Ubuntu 22.04 machine to a fully running homelab.
+#
+# Usage:
+#   ansible-playbook ansible/provision_local.yml -K
+#   ansible-playbook ansible/provision_local.yml -K --check   # dry run
+#
+# What this does:
+#   1. Installs Docker, Git, Python, and all required system packages
+#   2. Creates the homelab directory structure
+#   3. Starts all Docker Compose stacks
+#   4. Verifies all services are healthy
+
+- name: Provision homelab on local machine
+  hosts: local
+  gather_facts: true
+
+  vars:
+    homelab_root: "{{ ansible_env.HOME }}/homelab"
+
+  pre_tasks:
+    - name: Assert Ubuntu 22.04
+      ansible.builtin.assert:
+        that:
+          - ansible_distribution == "Ubuntu"
+          - ansible_distribution_version is version("22.04", ">=")
+        msg: "This playbook targets Ubuntu 22.04+. Detected: {{ ansible_distribution }} {{ ansible_distribution_version }}"
+      ignore_errors: true
+
+    - name: Show homelab root
+      ansible.builtin.debug:
+        msg: "Homelab root: {{ homelab_root }}"
+
+  roles:
+    - role: base
+    - role: homelab
+    - role: services
+
+  post_tasks:
+    - name: Print access URLs
+      ansible.builtin.debug:
+        msg:
+          - "Homelab provisioned successfully!"
+          - "Grafana:           http://localhost:3000  (admin/admin)"
+          - "Prometheus:        http://localhost:9090"
+          - "Alertmanager:      http://localhost:9093"
+          - "Loki:              http://localhost:3100"
+          - "System Monitor:    http://localhost:8000/status"
+          - "Mfg Data Sim:      http://localhost:9200/status"

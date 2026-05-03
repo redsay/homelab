@@ -1,0 +1,62 @@
+version: "3.8"
+
+# This stack can run standalone or join the shared homelab-net when the monitoring stack is also running.
+# Standalone: Grafana is included here with Loki as its datasource.
+# Combined: comment out the grafana service below and use the one from docker/monitoring/.
+
+networks:
+  homelab-net:
+    name: homelab-net
+    driver: bridge
+
+volumes:
+  loki_data:
+  grafana_log_data:
+
+services:
+  loki:
+    image: grafana/loki:2.9.7
+    container_name: loki
+    restart: unless-stopped
+    volumes:
+      - ./loki/loki-config.yml:/etc/loki/config.yml:ro
+      - loki_data:/loki
+    command: -config.file=/etc/loki/config.yml
+    ports:
+      - "3100:3100"
+    networks:
+      - homelab-net
+
+  promtail:
+    image: grafana/promtail:2.9.7
+    container_name: promtail
+    restart: unless-stopped
+    volumes:
+      - ./promtail/promtail-config.yml:/etc/promtail/config.yml:ro
+      - /var/log:/var/log:ro
+      - ${HOME}/homelab/logs:/homelab/logs:ro
+    command: -config.file=/etc/promtail/config.yml
+    networks:
+      - homelab-net
+    depends_on:
+      - loki
+
+  grafana-logs:
+    image: grafana/grafana:10.4.2
+    container_name: grafana-logs
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana_log_data:/var/lib/grafana
+      - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources:ro
+      - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+    ports:
+      - "3001:3000"
+    networks:
+      - homelab-net
+    depends_on:
+      - loki

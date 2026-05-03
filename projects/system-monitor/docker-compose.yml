@@ -1,0 +1,67 @@
+version: "3.8"
+
+# Standalone deployment — runs system-monitor with its own Prometheus + Grafana.
+# To integrate with the shared homelab stack, connect to homelab-net instead.
+
+networks:
+  monitor-net:
+    driver: bridge
+  homelab-net:
+    name: homelab-net
+    external: true
+
+volumes:
+  prometheus_data:
+  grafana_data:
+
+services:
+  system-monitor:
+    build: .
+    container_name: system-monitor
+    restart: unless-stopped
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ${HOME}/homelab/logs/system-monitor:/app/logs
+    ports:
+      - "8000:8000"
+    networks:
+      - monitor-net
+      - homelab-net
+    environment:
+      - CONFIG_PATH=/app/config.yaml
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  prometheus:
+    image: prom/prometheus:v2.51.2
+    container_name: sm-prometheus
+    restart: unless-stopped
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.retention.time=30d"
+    ports:
+      - "9091:9090"
+    networks:
+      - monitor-net
+
+  grafana:
+    image: grafana/grafana:10.4.2
+    container_name: sm-grafana
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+    ports:
+      - "3002:3000"
+    networks:
+      - monitor-net
+    depends_on:
+      - prometheus

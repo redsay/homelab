@@ -1,0 +1,2002 @@
+[
+  {
+    "log_id": "VND-00117",
+    "timestamp": "2025-04-01T06:46:45+00:00",
+    "batch_id": "BATCH-44E64BA4",
+    "machine_id": "MILL-01",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 151686
+  },
+  {
+    "log_id": "VND-00186",
+    "timestamp": "2025-04-01T07:46:42+00:00",
+    "batch_id": "BATCH-FCC53B06",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 106696
+  },
+  {
+    "log_id": "VND-00171",
+    "timestamp": "2025-04-01T10:35:47+00:00",
+    "batch_id": "BATCH-901789E9",
+    "machine_id": "ASSY-02",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 181217
+  },
+  {
+    "log_id": "VND-00124",
+    "timestamp": "2025-04-01T12:02:33+00:00",
+    "batch_id": "BATCH-F49D21BA",
+    "machine_id": "ASSY-03",
+    "operation_code": "OP_ASSY",
+    "result": "ERROR",
+    "error_code": "E_TORQUE_LIMIT",
+    "cycle_time_ms": 231363
+  },
+  {
+    "log_id": "VND-00062",
+    "timestamp": "2025-04-01T12:53:33+00:00",
+    "batch_id": "BATCH-285FD608",
+    "machine_id": "DRILL-01",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 30397
+  },
+  {
+    "log_id": "VND-00170",
+    "timestamp": "2025-04-01T13:30:32+00:00",
+    "batch_id": "BATCH-0332E3D2",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 79038
+  },
+  {
+    "log_id": "VND-00123",
+    "timestamp": "2025-04-01T13:32:01+00:00",
+    "batch_id": "BATCH-9A72172F",
+    "machine_id": "ASSY-02",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 138643
+  },
+  {
+    "log_id": "VND-00187",
+    "timestamp": "2025-04-01T14:55:46+00:00",
+    "batch_id": "BATCH-B53DAA91",
+    "machine_id": "DRILL-03",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 10935
+  },
+  {
+    "log_id": "VND-00003",
+    "timestamp": "2025-04-01T15:15:26+00:00",
+    "batch_id": "BATCH-4C710D63",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 52549
+  },
+  {
+    "log_id": "VND-00056",
+    "timestamp": "2025-04-01T16:29:38+00:00",
+    "batch_id": "BATCH-67414432",
+    "machine_id": "DRILL-03",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 19359
+  },
+  {
+    "log_id": "VND-00046",
+    "timestamp": "2025-04-01T17:34:32+00:00",
+    "batch_id": "BATCH-6417163D",
+    "machine_id": "ASSY-03",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 414891
+  },
+  {
+    "log_id": "VND-00090",
+    "timestamp": "2025-04-01T17:43:33+00:00",
+    "batch_id": "BATCH-F56EFF94",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 53406
+  },
+  {
+    "log_id": "VND-00012",
+    "timestamp": "2025-04-01T19:20:50+00:00",
+    "batch_id": "BATCH-E341313F",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 105117
+  },
+  {
+    "log_id": "VND-00021",
+    "timestamp": "2025-04-01T19:43:25+00:00",
+    "batch_id": "BATCH-1A9DBD2A",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 34764
+  },
+  {
+    "log_id": "VND-00036",
+    "timestamp": "2025-04-01T21:46:42+00:00",
+    "batch_id": "BATCH-B2DE5C28",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 33538
+  },
+  {
+    "log_id": "VND-00044",
+    "timestamp": "2025-04-01T22:34:02+00:00",
+    "batch_id": "BATCH-1B5EDA01",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 356466
+  },
+  {
+    "log_id": "VND-00028",
+    "timestamp": "2025-04-01T22:52:18+00:00",
+    "batch_id": "BATCH-1724359D",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 123641
+  },
+  {
+    "log_id": "VND-00174",
+    "timestamp": "2025-04-01T23:43:00+00:00",
+    "batch_id": "BATCH-87D321DF",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 82785
+  },
+  {
+    "log_id": "VND-00172",
+    "timestamp": "2025-04-02T00:30:45+00:00",
+    "batch_id": "BATCH-6554BBF0",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 339905
+  },
+  {
+    "log_id": "VND-00018",
+    "timestamp": "2025-04-02T01:16:43+00:00",
+    "batch_id": "BATCH-76278192",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 47088
+  },
+  {
+    "log_id": "VND-00033",
+    "timestamp": "2025-04-02T01:37:54+00:00",
+    "batch_id": "BATCH-BACC4FDA",
+    "machine_id": "MILL-01",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 52804
+  },
+  {
+    "log_id": "VND-00143",
+    "timestamp": "2025-04-02T01:55:44+00:00",
+    "batch_id": "BATCH-D9502978",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 212272
+  },
+  {
+    "log_id": "VND-00096",
+    "timestamp": "2025-04-02T02:05:06+00:00",
+    "batch_id": "BATCH-6CF3517C",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "TIMEOUT",
+    "error_code": null,
+    "cycle_time_ms": 87001
+  },
+  {
+    "log_id": "VND-00120",
+    "timestamp": "2025-04-02T02:47:58+00:00",
+    "batch_id": "BATCH-AED92E52",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 76166
+  },
+  {
+    "log_id": "VND-00175",
+    "timestamp": "2025-04-02T05:31:54+00:00",
+    "batch_id": "BATCH-450AF444",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 61782
+  },
+  {
+    "log_id": "VND-00072",
+    "timestamp": "2025-04-02T06:41:54+00:00",
+    "batch_id": "BATCH-6313420E",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 56882
+  },
+  {
+    "log_id": "VND-00158",
+    "timestamp": "2025-04-02T08:18:09+00:00",
+    "batch_id": "BATCH-2E61C3F6",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 71648
+  },
+  {
+    "log_id": "VND-00180",
+    "timestamp": "2025-04-02T08:34:16+00:00",
+    "batch_id": "BATCH-4E569579",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 31701
+  },
+  {
+    "log_id": "VND-00166",
+    "timestamp": "2025-04-02T08:42:06+00:00",
+    "batch_id": "BATCH-7D0B4F2C",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 101213
+  },
+  {
+    "log_id": "VND-00177",
+    "timestamp": "2025-04-02T10:53:16+00:00",
+    "batch_id": "BATCH-421A67A8",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 34876
+  },
+  {
+    "log_id": "VND-00140",
+    "timestamp": "2025-04-02T11:02:35+00:00",
+    "batch_id": "BATCH-E82AF71F",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 165563
+  },
+  {
+    "log_id": "VND-00144",
+    "timestamp": "2025-04-02T11:16:29+00:00",
+    "batch_id": "BATCH-7669378E",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 77247
+  },
+  {
+    "log_id": "VND-00093",
+    "timestamp": "2025-04-02T13:29:09+00:00",
+    "batch_id": "BATCH-05E99C18",
+    "machine_id": "DRILL-02",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 27349
+  },
+  {
+    "log_id": "VND-00191",
+    "timestamp": "2025-04-02T14:17:56+00:00",
+    "batch_id": "BATCH-24FB3FDB",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 133882
+  },
+  {
+    "log_id": "VND-00001",
+    "timestamp": "2025-04-02T14:25:39+00:00",
+    "batch_id": "BATCH-19409F10",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 51284
+  },
+  {
+    "log_id": "VND-00023",
+    "timestamp": "2025-04-02T15:21:56+00:00",
+    "batch_id": "BATCH-84A22CA4",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 370755
+  },
+  {
+    "log_id": "VND-00064",
+    "timestamp": "2025-04-02T15:35:44+00:00",
+    "batch_id": "BATCH-94E1E695",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 127553
+  },
+  {
+    "log_id": "VND-00106",
+    "timestamp": "2025-04-02T17:08:36+00:00",
+    "batch_id": "BATCH-7EF8F9C1",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 111431
+  },
+  {
+    "log_id": "VND-00167",
+    "timestamp": "2025-04-02T18:40:40+00:00",
+    "batch_id": "BATCH-3CA48833",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 208135
+  },
+  {
+    "log_id": "VND-00091",
+    "timestamp": "2025-04-02T18:45:52+00:00",
+    "batch_id": "BATCH-A309A4F9",
+    "machine_id": "DRILL-01",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 23469
+  },
+  {
+    "log_id": "VND-00077",
+    "timestamp": "2025-04-02T20:50:16+00:00",
+    "batch_id": "BATCH-F8E3EA5B",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 166452
+  },
+  {
+    "log_id": "VND-00002",
+    "timestamp": "2025-04-02T22:38:36+00:00",
+    "batch_id": "BATCH-BEE6627F",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 71800
+  },
+  {
+    "log_id": "VND-00147",
+    "timestamp": "2025-04-02T23:41:09+00:00",
+    "batch_id": "BATCH-93B0ED7C",
+    "machine_id": "DRILL-02",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 15130
+  },
+  {
+    "log_id": "VND-00136",
+    "timestamp": "2025-04-03T01:16:53+00:00",
+    "batch_id": "BATCH-BAAA163C",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 177189
+  },
+  {
+    "log_id": "VND-00139",
+    "timestamp": "2025-04-03T02:18:13+00:00",
+    "batch_id": "BATCH-C1579B1E",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 84602
+  },
+  {
+    "log_id": "VND-00163",
+    "timestamp": "2025-04-03T03:00:29+00:00",
+    "batch_id": "BATCH-97AF728F",
+    "machine_id": "ASSY-02",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 307353
+  },
+  {
+    "log_id": "VND-00189",
+    "timestamp": "2025-04-03T03:18:57+00:00",
+    "batch_id": "BATCH-F9660009",
+    "machine_id": "MILL-01",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 86171
+  },
+  {
+    "log_id": "VND-00024",
+    "timestamp": "2025-04-03T04:04:00+00:00",
+    "batch_id": "BATCH-3EDF788E",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 178479
+  },
+  {
+    "log_id": "VND-00131",
+    "timestamp": "2025-04-03T04:07:51+00:00",
+    "batch_id": "BATCH-AA497706",
+    "machine_id": "DRILL-03",
+    "operation_code": "OP_DRILL",
+    "result": "TIMEOUT",
+    "error_code": null,
+    "cycle_time_ms": 17372
+  },
+  {
+    "log_id": "VND-00156",
+    "timestamp": "2025-04-03T05:55:37+00:00",
+    "batch_id": "BATCH-88296C9E",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 127891
+  },
+  {
+    "log_id": "VND-00092",
+    "timestamp": "2025-04-03T06:52:19+00:00",
+    "batch_id": "BATCH-BDDCC634",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 218065
+  },
+  {
+    "log_id": "VND-00199",
+    "timestamp": "2025-04-03T06:58:19+00:00",
+    "batch_id": "BATCH-3E29E938",
+    "machine_id": "DRILL-02",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 10546
+  },
+  {
+    "log_id": "VND-00146",
+    "timestamp": "2025-04-03T07:30:40+00:00",
+    "batch_id": "BATCH-4B13EE94",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 43215
+  },
+  {
+    "log_id": "VND-00125",
+    "timestamp": "2025-04-03T10:51:45+00:00",
+    "batch_id": "BATCH-4CE65B60",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 76844
+  },
+  {
+    "log_id": "VND-00111",
+    "timestamp": "2025-04-03T11:41:59+00:00",
+    "batch_id": "BATCH-47B8437E",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 25967
+  },
+  {
+    "log_id": "VND-00035",
+    "timestamp": "2025-04-03T13:27:39+00:00",
+    "batch_id": "BATCH-D99D1430",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 32230
+  },
+  {
+    "log_id": "VND-00037",
+    "timestamp": "2025-04-03T13:48:16+00:00",
+    "batch_id": "BATCH-258BFBD8",
+    "machine_id": "MILL-01",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 94237
+  },
+  {
+    "log_id": "VND-00069",
+    "timestamp": "2025-04-03T13:52:38+00:00",
+    "batch_id": "BATCH-5B92FC95",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 170477
+  },
+  {
+    "log_id": "VND-00094",
+    "timestamp": "2025-04-03T15:46:03+00:00",
+    "batch_id": "BATCH-5516CDAA",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 29458
+  },
+  {
+    "log_id": "VND-00061",
+    "timestamp": "2025-04-03T16:07:47+00:00",
+    "batch_id": "BATCH-7A0B56C8",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 81116
+  },
+  {
+    "log_id": "VND-00116",
+    "timestamp": "2025-04-03T19:27:55+00:00",
+    "batch_id": "BATCH-E70EF87C",
+    "machine_id": "DRILL-03",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 16801
+  },
+  {
+    "log_id": "VND-00030",
+    "timestamp": "2025-04-03T19:41:26+00:00",
+    "batch_id": "BATCH-45027676",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 201748
+  },
+  {
+    "log_id": "VND-00049",
+    "timestamp": "2025-04-03T20:05:08+00:00",
+    "batch_id": "BATCH-102AE2E1",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 178418
+  },
+  {
+    "log_id": "VND-00168",
+    "timestamp": "2025-04-03T20:54:01+00:00",
+    "batch_id": "BATCH-263DE907",
+    "machine_id": "DRILL-03",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 35257
+  },
+  {
+    "log_id": "VND-00107",
+    "timestamp": "2025-04-03T21:01:35+00:00",
+    "batch_id": "BATCH-26F05E5A",
+    "machine_id": "DRILL-01",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 33202
+  },
+  {
+    "log_id": "VND-00076",
+    "timestamp": "2025-04-03T21:44:31+00:00",
+    "batch_id": "BATCH-EA1ED3DB",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 90617
+  },
+  {
+    "log_id": "VND-00114",
+    "timestamp": "2025-04-03T23:44:10+00:00",
+    "batch_id": "BATCH-6EAA2564",
+    "machine_id": "ASSY-03",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 363586
+  },
+  {
+    "log_id": "VND-00081",
+    "timestamp": "2025-04-04T01:21:35+00:00",
+    "batch_id": "BATCH-461E1BD4",
+    "machine_id": "DRILL-01",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 20400
+  },
+  {
+    "log_id": "VND-00013",
+    "timestamp": "2025-04-04T01:48:18+00:00",
+    "batch_id": "BATCH-021262B1",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 71440
+  },
+  {
+    "log_id": "VND-00162",
+    "timestamp": "2025-04-04T02:23:25+00:00",
+    "batch_id": "BATCH-E550A572",
+    "machine_id": "MILL-01",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 81507
+  },
+  {
+    "log_id": "VND-00045",
+    "timestamp": "2025-04-04T02:30:29+00:00",
+    "batch_id": "BATCH-3CCFA146",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 150351
+  },
+  {
+    "log_id": "VND-00150",
+    "timestamp": "2025-04-04T03:05:28+00:00",
+    "batch_id": "BATCH-62A9F887",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 70418
+  },
+  {
+    "log_id": "VND-00104",
+    "timestamp": "2025-04-04T04:52:03+00:00",
+    "batch_id": "BATCH-1FDF6434",
+    "machine_id": "DRILL-02",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 18120
+  },
+  {
+    "log_id": "VND-00075",
+    "timestamp": "2025-04-04T05:03:56+00:00",
+    "batch_id": "BATCH-5511CBD2",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 39919
+  },
+  {
+    "log_id": "VND-00038",
+    "timestamp": "2025-04-04T06:45:41+00:00",
+    "batch_id": "BATCH-7E7AC182",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 79888
+  },
+  {
+    "log_id": "VND-00149",
+    "timestamp": "2025-04-04T06:50:46+00:00",
+    "batch_id": "BATCH-AA21A1CF",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 180503
+  },
+  {
+    "log_id": "VND-00153",
+    "timestamp": "2025-04-04T07:00:01+00:00",
+    "batch_id": "BATCH-7ADDBDBA",
+    "machine_id": "DRILL-03",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 30531
+  },
+  {
+    "log_id": "VND-00066",
+    "timestamp": "2025-04-04T08:11:35+00:00",
+    "batch_id": "BATCH-2459F893",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "TIMEOUT",
+    "error_code": null,
+    "cycle_time_ms": 25919
+  },
+  {
+    "log_id": "VND-00101",
+    "timestamp": "2025-04-04T09:15:02+00:00",
+    "batch_id": "BATCH-CF244676",
+    "machine_id": "DRILL-02",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 19954
+  },
+  {
+    "log_id": "VND-00047",
+    "timestamp": "2025-04-04T09:57:12+00:00",
+    "batch_id": "BATCH-F1688B6B",
+    "machine_id": "ASSY-02",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 196358
+  },
+  {
+    "log_id": "VND-00053",
+    "timestamp": "2025-04-04T10:53:27+00:00",
+    "batch_id": "BATCH-6B0961A7",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 191593
+  },
+  {
+    "log_id": "VND-00060",
+    "timestamp": "2025-04-04T11:42:46+00:00",
+    "batch_id": "BATCH-62DFC2B0",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 41624
+  },
+  {
+    "log_id": "VND-00015",
+    "timestamp": "2025-04-04T11:45:46+00:00",
+    "batch_id": "BATCH-E218C930",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 63963
+  },
+  {
+    "log_id": "VND-00185",
+    "timestamp": "2025-04-04T11:53:59+00:00",
+    "batch_id": "BATCH-22C52C44",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 23426
+  },
+  {
+    "log_id": "VND-00098",
+    "timestamp": "2025-04-04T12:40:01+00:00",
+    "batch_id": "BATCH-E6AFC130",
+    "machine_id": "ASSY-03",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 412807
+  },
+  {
+    "log_id": "VND-00133",
+    "timestamp": "2025-04-04T13:38:26+00:00",
+    "batch_id": "BATCH-FFBDB65F",
+    "machine_id": "ASSY-03",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 307771
+  },
+  {
+    "log_id": "VND-00169",
+    "timestamp": "2025-04-04T14:45:43+00:00",
+    "batch_id": "BATCH-5962AD24",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 165215
+  },
+  {
+    "log_id": "VND-00079",
+    "timestamp": "2025-04-04T14:46:22+00:00",
+    "batch_id": "BATCH-CEA1F32E",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 196555
+  },
+  {
+    "log_id": "VND-00006",
+    "timestamp": "2025-04-04T15:01:44+00:00",
+    "batch_id": "BATCH-F5212926",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 46635
+  },
+  {
+    "log_id": "VND-00108",
+    "timestamp": "2025-04-04T16:25:45+00:00",
+    "batch_id": "BATCH-C2A2A513",
+    "machine_id": "ASSY-03",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 142071
+  },
+  {
+    "log_id": "VND-00080",
+    "timestamp": "2025-04-04T17:13:27+00:00",
+    "batch_id": "BATCH-617D1448",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 105636
+  },
+  {
+    "log_id": "VND-00148",
+    "timestamp": "2025-04-04T17:46:43+00:00",
+    "batch_id": "BATCH-22C54D72",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 86615
+  },
+  {
+    "log_id": "VND-00130",
+    "timestamp": "2025-04-04T17:53:40+00:00",
+    "batch_id": "BATCH-C273D986",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 319945
+  },
+  {
+    "log_id": "VND-00118",
+    "timestamp": "2025-04-04T17:54:59+00:00",
+    "batch_id": "BATCH-4499748B",
+    "machine_id": "MILL-01",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 120004
+  },
+  {
+    "log_id": "VND-00193",
+    "timestamp": "2025-04-04T18:18:27+00:00",
+    "batch_id": "BATCH-3F6AF6EA",
+    "machine_id": "DRILL-02",
+    "operation_code": "OP_DRILL",
+    "result": "TIMEOUT",
+    "error_code": null,
+    "cycle_time_ms": 18632
+  },
+  {
+    "log_id": "VND-00011",
+    "timestamp": "2025-04-04T19:23:39+00:00",
+    "batch_id": "BATCH-A5756F64",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 139371
+  },
+  {
+    "log_id": "VND-00145",
+    "timestamp": "2025-04-04T19:26:58+00:00",
+    "batch_id": "BATCH-7C66DE4F",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 154056
+  },
+  {
+    "log_id": "VND-00068",
+    "timestamp": "2025-04-04T21:28:30+00:00",
+    "batch_id": "BATCH-32029591",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 177763
+  },
+  {
+    "log_id": "VND-00095",
+    "timestamp": "2025-04-04T21:50:32+00:00",
+    "batch_id": "BATCH-9B313136",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 76824
+  },
+  {
+    "log_id": "VND-00113",
+    "timestamp": "2025-04-04T22:29:54+00:00",
+    "batch_id": "BATCH-CDE45D52",
+    "machine_id": "DRILL-03",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 10643
+  },
+  {
+    "log_id": "VND-00115",
+    "timestamp": "2025-04-04T22:56:54+00:00",
+    "batch_id": "BATCH-8E22DD3E",
+    "machine_id": "ASSY-02",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 387328
+  },
+  {
+    "log_id": "VND-00073",
+    "timestamp": "2025-04-05T00:24:58+00:00",
+    "batch_id": "BATCH-DA6F024E",
+    "machine_id": "MILL-01",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 103389
+  },
+  {
+    "log_id": "VND-00179",
+    "timestamp": "2025-04-05T01:01:44+00:00",
+    "batch_id": "BATCH-6352D422",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 234760
+  },
+  {
+    "log_id": "VND-00043",
+    "timestamp": "2025-04-05T01:20:38+00:00",
+    "batch_id": "BATCH-9A1FFA7E",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 120853
+  },
+  {
+    "log_id": "VND-00048",
+    "timestamp": "2025-04-05T02:05:35+00:00",
+    "batch_id": "BATCH-39E4B030",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 78220
+  },
+  {
+    "log_id": "VND-00126",
+    "timestamp": "2025-04-05T03:30:53+00:00",
+    "batch_id": "BATCH-C6430E1D",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 33724
+  },
+  {
+    "log_id": "VND-00071",
+    "timestamp": "2025-04-05T03:51:42+00:00",
+    "batch_id": "BATCH-974DDE19",
+    "machine_id": "ASSY-03",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 333833
+  },
+  {
+    "log_id": "VND-00099",
+    "timestamp": "2025-04-05T03:52:40+00:00",
+    "batch_id": "BATCH-3E732080",
+    "machine_id": "ASSY-02",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 218209
+  },
+  {
+    "log_id": "VND-00027",
+    "timestamp": "2025-04-05T04:25:02+00:00",
+    "batch_id": "BATCH-D30246B6",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 346969
+  },
+  {
+    "log_id": "VND-00017",
+    "timestamp": "2025-04-05T04:27:15+00:00",
+    "batch_id": "BATCH-4DF41278",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 118973
+  },
+  {
+    "log_id": "VND-00085",
+    "timestamp": "2025-04-05T07:54:17+00:00",
+    "batch_id": "BATCH-1B416BCA",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 151263
+  },
+  {
+    "log_id": "VND-00100",
+    "timestamp": "2025-04-05T07:58:57+00:00",
+    "batch_id": "BATCH-E6DA56FC",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 23759
+  },
+  {
+    "log_id": "VND-00008",
+    "timestamp": "2025-04-05T08:02:24+00:00",
+    "batch_id": "BATCH-348FDDE7",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 71392
+  },
+  {
+    "log_id": "VND-00088",
+    "timestamp": "2025-04-05T08:18:14+00:00",
+    "batch_id": "BATCH-F39668E9",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 69555
+  },
+  {
+    "log_id": "VND-00007",
+    "timestamp": "2025-04-05T09:06:18+00:00",
+    "batch_id": "BATCH-1A4B0E78",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 118322
+  },
+  {
+    "log_id": "VND-00200",
+    "timestamp": "2025-04-05T12:15:54+00:00",
+    "batch_id": "BATCH-7B54CA4C",
+    "machine_id": "DRILL-02",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 31358
+  },
+  {
+    "log_id": "VND-00063",
+    "timestamp": "2025-04-05T12:16:43+00:00",
+    "batch_id": "BATCH-CD49F37F",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 178635
+  },
+  {
+    "log_id": "VND-00182",
+    "timestamp": "2025-04-05T12:59:34+00:00",
+    "batch_id": "BATCH-525A1C89",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 155509
+  },
+  {
+    "log_id": "VND-00009",
+    "timestamp": "2025-04-05T14:33:37+00:00",
+    "batch_id": "BATCH-69BEC689",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 134709
+  },
+  {
+    "log_id": "VND-00057",
+    "timestamp": "2025-04-05T16:12:44+00:00",
+    "batch_id": "BATCH-AC6CFC25",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 55823
+  },
+  {
+    "log_id": "VND-00014",
+    "timestamp": "2025-04-05T16:15:54+00:00",
+    "batch_id": "BATCH-53BE6CA6",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 87352
+  },
+  {
+    "log_id": "VND-00165",
+    "timestamp": "2025-04-05T16:59:38+00:00",
+    "batch_id": "BATCH-983C34A8",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 202116
+  },
+  {
+    "log_id": "VND-00050",
+    "timestamp": "2025-04-05T17:37:57+00:00",
+    "batch_id": "BATCH-35349131",
+    "machine_id": "MILL-01",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 120147
+  },
+  {
+    "log_id": "VND-00188",
+    "timestamp": "2025-04-05T17:47:08+00:00",
+    "batch_id": "BATCH-7BEB3540",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 141914
+  },
+  {
+    "log_id": "VND-00164",
+    "timestamp": "2025-04-05T17:55:28+00:00",
+    "batch_id": "BATCH-651E113A",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 117706
+  },
+  {
+    "log_id": "VND-00026",
+    "timestamp": "2025-04-05T18:54:37+00:00",
+    "batch_id": "BATCH-A73D98E5",
+    "machine_id": "DRILL-01",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 33874
+  },
+  {
+    "log_id": "VND-00194",
+    "timestamp": "2025-04-05T20:44:36+00:00",
+    "batch_id": "BATCH-1DAFD125",
+    "machine_id": "DRILL-01",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 25819
+  },
+  {
+    "log_id": "VND-00159",
+    "timestamp": "2025-04-05T20:58:54+00:00",
+    "batch_id": "BATCH-2B3C7722",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 227356
+  },
+  {
+    "log_id": "VND-00134",
+    "timestamp": "2025-04-05T21:43:39+00:00",
+    "batch_id": "BATCH-1732BE1B",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 190703
+  },
+  {
+    "log_id": "VND-00022",
+    "timestamp": "2025-04-05T22:04:17+00:00",
+    "batch_id": "BATCH-6437651D",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 69533
+  },
+  {
+    "log_id": "VND-00041",
+    "timestamp": "2025-04-05T23:43:06+00:00",
+    "batch_id": "BATCH-F7CF9566",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 55720
+  },
+  {
+    "log_id": "VND-00086",
+    "timestamp": "2025-04-06T00:46:00+00:00",
+    "batch_id": "BATCH-E1A7785E",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 400638
+  },
+  {
+    "log_id": "VND-00192",
+    "timestamp": "2025-04-06T01:07:43+00:00",
+    "batch_id": "BATCH-7EB5605D",
+    "machine_id": "MILL-01",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 59931
+  },
+  {
+    "log_id": "VND-00151",
+    "timestamp": "2025-04-06T01:17:12+00:00",
+    "batch_id": "BATCH-3F1B1302",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 132546
+  },
+  {
+    "log_id": "VND-00195",
+    "timestamp": "2025-04-06T01:39:19+00:00",
+    "batch_id": "BATCH-0BA6EB5F",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "TIMEOUT",
+    "error_code": null,
+    "cycle_time_ms": 71854
+  },
+  {
+    "log_id": "VND-00070",
+    "timestamp": "2025-04-06T04:16:40+00:00",
+    "batch_id": "BATCH-66B8B16E",
+    "machine_id": "ASSY-02",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 377156
+  },
+  {
+    "log_id": "VND-00161",
+    "timestamp": "2025-04-06T04:55:29+00:00",
+    "batch_id": "BATCH-69A78289",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "ERROR",
+    "error_code": "E_PROBE_ERR",
+    "cycle_time_ms": 35300
+  },
+  {
+    "log_id": "VND-00138",
+    "timestamp": "2025-04-06T05:38:48+00:00",
+    "batch_id": "BATCH-EB0FF03A",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 26590
+  },
+  {
+    "log_id": "VND-00059",
+    "timestamp": "2025-04-06T06:05:22+00:00",
+    "batch_id": "BATCH-097B6079",
+    "machine_id": "DRILL-01",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 9414
+  },
+  {
+    "log_id": "VND-00178",
+    "timestamp": "2025-04-06T06:31:54+00:00",
+    "batch_id": "BATCH-52DA55DF",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 63618
+  },
+  {
+    "log_id": "VND-00135",
+    "timestamp": "2025-04-06T06:51:38+00:00",
+    "batch_id": "BATCH-ACA23D1B",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 133675
+  },
+  {
+    "log_id": "VND-00155",
+    "timestamp": "2025-04-06T07:01:26+00:00",
+    "batch_id": "BATCH-182FDA4F",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 106836
+  },
+  {
+    "log_id": "VND-00054",
+    "timestamp": "2025-04-06T09:22:31+00:00",
+    "batch_id": "BATCH-FA9C3F03",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "TIMEOUT",
+    "error_code": null,
+    "cycle_time_ms": 116797
+  },
+  {
+    "log_id": "VND-00119",
+    "timestamp": "2025-04-06T09:49:50+00:00",
+    "batch_id": "BATCH-DC2335EB",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 90947
+  },
+  {
+    "log_id": "VND-00020",
+    "timestamp": "2025-04-06T10:47:25+00:00",
+    "batch_id": "BATCH-1FB991A2",
+    "machine_id": "ASSY-02",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 395982
+  },
+  {
+    "log_id": "VND-00067",
+    "timestamp": "2025-04-06T11:37:28+00:00",
+    "batch_id": "BATCH-82E6FEC8",
+    "machine_id": "DRILL-02",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 11028
+  },
+  {
+    "log_id": "VND-00097",
+    "timestamp": "2025-04-06T12:16:22+00:00",
+    "batch_id": "BATCH-DE454D91",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 66832
+  },
+  {
+    "log_id": "VND-00065",
+    "timestamp": "2025-04-06T12:34:33+00:00",
+    "batch_id": "BATCH-FA7F669A",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 134855
+  },
+  {
+    "log_id": "VND-00122",
+    "timestamp": "2025-04-06T13:30:23+00:00",
+    "batch_id": "BATCH-F9F85CFC",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "ERROR",
+    "error_code": "E_GAS_PRESSURE",
+    "cycle_time_ms": 80747
+  },
+  {
+    "log_id": "VND-00121",
+    "timestamp": "2025-04-06T13:54:45+00:00",
+    "batch_id": "BATCH-F814CE48",
+    "machine_id": "ASSY-02",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 155021
+  },
+  {
+    "log_id": "VND-00154",
+    "timestamp": "2025-04-06T14:23:56+00:00",
+    "batch_id": "BATCH-A41D7127",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 52930
+  },
+  {
+    "log_id": "VND-00055",
+    "timestamp": "2025-04-06T14:41:38+00:00",
+    "batch_id": "BATCH-244C56E4",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 203773
+  },
+  {
+    "log_id": "VND-00190",
+    "timestamp": "2025-04-06T14:45:16+00:00",
+    "batch_id": "BATCH-951EC236",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 73520
+  },
+  {
+    "log_id": "VND-00137",
+    "timestamp": "2025-04-06T18:37:43+00:00",
+    "batch_id": "BATCH-642EFD39",
+    "machine_id": "ASSY-02",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 258875
+  },
+  {
+    "log_id": "VND-00074",
+    "timestamp": "2025-04-06T18:38:58+00:00",
+    "batch_id": "BATCH-75B85961",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 74107
+  },
+  {
+    "log_id": "VND-00019",
+    "timestamp": "2025-04-06T19:39:01+00:00",
+    "batch_id": "BATCH-5C065378",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 38875
+  },
+  {
+    "log_id": "VND-00010",
+    "timestamp": "2025-04-06T19:49:01+00:00",
+    "batch_id": "BATCH-443786A8",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 77787
+  },
+  {
+    "log_id": "VND-00197",
+    "timestamp": "2025-04-06T20:00:46+00:00",
+    "batch_id": "BATCH-31BC1466",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 154355
+  },
+  {
+    "log_id": "VND-00132",
+    "timestamp": "2025-04-06T20:24:23+00:00",
+    "batch_id": "BATCH-A7386FE2",
+    "machine_id": "DRILL-01",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 11446
+  },
+  {
+    "log_id": "VND-00087",
+    "timestamp": "2025-04-06T20:28:45+00:00",
+    "batch_id": "BATCH-64073D7D",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 43252
+  },
+  {
+    "log_id": "VND-00016",
+    "timestamp": "2025-04-06T20:38:34+00:00",
+    "batch_id": "BATCH-664492D5",
+    "machine_id": "DRILL-01",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 20842
+  },
+  {
+    "log_id": "VND-00157",
+    "timestamp": "2025-04-06T22:24:41+00:00",
+    "batch_id": "BATCH-8F9B39F2",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 80500
+  },
+  {
+    "log_id": "VND-00141",
+    "timestamp": "2025-04-06T22:44:56+00:00",
+    "batch_id": "BATCH-FCBFCA82",
+    "machine_id": "DRILL-01",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 33423
+  },
+  {
+    "log_id": "VND-00089",
+    "timestamp": "2025-04-06T22:59:12+00:00",
+    "batch_id": "BATCH-13274A3B",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 64540
+  },
+  {
+    "log_id": "VND-00103",
+    "timestamp": "2025-04-07T00:40:19+00:00",
+    "batch_id": "BATCH-450F9598",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 346933
+  },
+  {
+    "log_id": "VND-00040",
+    "timestamp": "2025-04-07T03:27:11+00:00",
+    "batch_id": "BATCH-8871B2FA",
+    "machine_id": "DRILL-02",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 23110
+  },
+  {
+    "log_id": "VND-00042",
+    "timestamp": "2025-04-07T03:45:11+00:00",
+    "batch_id": "BATCH-09E78F81",
+    "machine_id": "ASSY-03",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 171344
+  },
+  {
+    "log_id": "VND-00110",
+    "timestamp": "2025-04-07T04:58:43+00:00",
+    "batch_id": "BATCH-E29FAED0",
+    "machine_id": "DRILL-03",
+    "operation_code": "OP_DRILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 11341
+  },
+  {
+    "log_id": "VND-00112",
+    "timestamp": "2025-04-07T05:13:53+00:00",
+    "batch_id": "BATCH-144CC90C",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 63730
+  },
+  {
+    "log_id": "VND-00152",
+    "timestamp": "2025-04-07T06:40:56+00:00",
+    "batch_id": "BATCH-A99E01B0",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 119472
+  },
+  {
+    "log_id": "VND-00129",
+    "timestamp": "2025-04-07T07:11:47+00:00",
+    "batch_id": "BATCH-2CD888A2",
+    "machine_id": "ASSY-02",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 417440
+  },
+  {
+    "log_id": "VND-00173",
+    "timestamp": "2025-04-07T08:45:13+00:00",
+    "batch_id": "BATCH-F08F19F7",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_OVERLOAD",
+    "cycle_time_ms": 102694
+  },
+  {
+    "log_id": "VND-00004",
+    "timestamp": "2025-04-07T09:11:43+00:00",
+    "batch_id": "BATCH-D4066A5A",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 52121
+  },
+  {
+    "log_id": "VND-00183",
+    "timestamp": "2025-04-07T09:47:40+00:00",
+    "batch_id": "BATCH-21AACB76",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 116503
+  },
+  {
+    "log_id": "VND-00025",
+    "timestamp": "2025-04-07T09:52:22+00:00",
+    "batch_id": "BATCH-8B685CF3",
+    "machine_id": "ASSY-01",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 146036
+  },
+  {
+    "log_id": "VND-00128",
+    "timestamp": "2025-04-07T11:53:13+00:00",
+    "batch_id": "BATCH-A47E76DE",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 44685
+  },
+  {
+    "log_id": "VND-00102",
+    "timestamp": "2025-04-07T12:28:42+00:00",
+    "batch_id": "BATCH-D435CC30",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 110084
+  },
+  {
+    "log_id": "VND-00031",
+    "timestamp": "2025-04-07T12:45:17+00:00",
+    "batch_id": "BATCH-9E3E9C8A",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 178046
+  },
+  {
+    "log_id": "VND-00198",
+    "timestamp": "2025-04-07T14:36:54+00:00",
+    "batch_id": "BATCH-4EAE0633",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 30003
+  },
+  {
+    "log_id": "VND-00029",
+    "timestamp": "2025-04-07T17:09:42+00:00",
+    "batch_id": "BATCH-B523E003",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 35821
+  },
+  {
+    "log_id": "VND-00142",
+    "timestamp": "2025-04-07T17:25:43+00:00",
+    "batch_id": "BATCH-5CD613A8",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 144616
+  },
+  {
+    "log_id": "VND-00109",
+    "timestamp": "2025-04-07T17:34:41+00:00",
+    "batch_id": "BATCH-5FED5CD1",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "ERROR",
+    "error_code": "E_ARC_FAULT",
+    "cycle_time_ms": 92780
+  },
+  {
+    "log_id": "VND-00084",
+    "timestamp": "2025-04-07T18:46:05+00:00",
+    "batch_id": "BATCH-8B57AF24",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 48900
+  },
+  {
+    "log_id": "VND-00034",
+    "timestamp": "2025-04-07T19:03:47+00:00",
+    "batch_id": "BATCH-A7AEEE82",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 37948
+  },
+  {
+    "log_id": "VND-00039",
+    "timestamp": "2025-04-07T19:27:27+00:00",
+    "batch_id": "BATCH-A994344C",
+    "machine_id": "MILL-01",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 48352
+  },
+  {
+    "log_id": "VND-00082",
+    "timestamp": "2025-04-07T20:02:49+00:00",
+    "batch_id": "BATCH-9ACA0E74",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 80929
+  },
+  {
+    "log_id": "VND-00005",
+    "timestamp": "2025-04-07T20:43:32+00:00",
+    "batch_id": "BATCH-A4B492CB",
+    "machine_id": "MILL-03",
+    "operation_code": "OP_MILL",
+    "result": "ERROR",
+    "error_code": "E_SPINDLE_FAULT",
+    "cycle_time_ms": 155077
+  },
+  {
+    "log_id": "VND-00078",
+    "timestamp": "2025-04-07T21:34:45+00:00",
+    "batch_id": "BATCH-F4430D86",
+    "machine_id": "CMM-02",
+    "operation_code": "OP_INSP",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 78367
+  },
+  {
+    "log_id": "VND-00176",
+    "timestamp": "2025-04-07T21:43:13+00:00",
+    "batch_id": "BATCH-1E91C7E4",
+    "machine_id": "ASSY-03",
+    "operation_code": "OP_ASSY",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 260093
+  },
+  {
+    "log_id": "VND-00127",
+    "timestamp": "2025-04-07T22:13:38+00:00",
+    "batch_id": "BATCH-A9540E9A",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 69281
+  },
+  {
+    "log_id": "VND-00105",
+    "timestamp": "2025-04-07T22:18:44+00:00",
+    "batch_id": "BATCH-794DE101",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 146341
+  },
+  {
+    "log_id": "VND-00052",
+    "timestamp": "2025-04-07T23:08:17+00:00",
+    "batch_id": "BATCH-A25C7106",
+    "machine_id": "MILL-01",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 86218
+  },
+  {
+    "log_id": "VND-00032",
+    "timestamp": "2025-04-07T23:20:28+00:00",
+    "batch_id": "BATCH-FCC2D773",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 105772
+  },
+  {
+    "log_id": "VND-00051",
+    "timestamp": "2025-04-07T23:32:22+00:00",
+    "batch_id": "BATCH-2F6883A4",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 138021
+  },
+  {
+    "log_id": "VND-00184",
+    "timestamp": "2025-04-08T00:01:26+00:00",
+    "batch_id": "BATCH-264E2C3E",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 140816
+  },
+  {
+    "log_id": "VND-00181",
+    "timestamp": "2025-04-08T00:03:17+00:00",
+    "batch_id": "BATCH-4D3D02AE",
+    "machine_id": "WELD-01",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 75398
+  },
+  {
+    "log_id": "VND-00058",
+    "timestamp": "2025-04-08T01:04:40+00:00",
+    "batch_id": "BATCH-57907AA7",
+    "machine_id": "MILL-02",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 152299
+  },
+  {
+    "log_id": "VND-00160",
+    "timestamp": "2025-04-08T01:31:18+00:00",
+    "batch_id": "BATCH-FEE8F87F",
+    "machine_id": "MILL-04",
+    "operation_code": "OP_MILL",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 131285
+  },
+  {
+    "log_id": "VND-00196",
+    "timestamp": "2025-04-08T05:00:53+00:00",
+    "batch_id": "BATCH-0F8D191B",
+    "machine_id": "WELD-02",
+    "operation_code": "OP_WELD",
+    "result": "OK",
+    "error_code": null,
+    "cycle_time_ms": 165059
+  },
+  {
+    "log_id": "VND-00083",
+    "timestamp": "2025-04-08T05:40:55+00:00",
+    "batch_id": "BATCH-72FC724A",
+    "machine_id": "CMM-01",
+    "operation_code": "OP_INSP",
+    "result": "TIMEOUT",
+    "error_code": null,
+    "cycle_time_ms": 69468
+  }
+]

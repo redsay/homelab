@@ -1,0 +1,55 @@
+---
+- name: Create homelab directory structure
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+    mode: "0755"
+  loop:
+    - "{{ homelab_root }}"
+    - "{{ homelab_root }}/logs/system-monitor"
+    - "{{ homelab_root }}/logs/backup-auditor"
+    - "{{ homelab_root }}/reports"
+    - "{{ homelab_root }}/docker/monitoring"
+    - "{{ homelab_root }}/docker/log-pipeline"
+    - "{{ homelab_root }}/projects/system-monitor"
+    - "{{ homelab_root }}/projects/backup-auditor"
+    - "{{ homelab_root }}/projects/log-correlator"
+    - "{{ homelab_root }}/projects/manufacturing-data-sim"
+    - "{{ homelab_root }}/scripts/python"
+    - "{{ homelab_root }}/scripts/bash"
+    - "{{ homelab_root }}/scripts/powershell"
+
+- name: Make bash scripts executable
+  ansible.builtin.file:
+    path: "{{ homelab_root }}/scripts/bash/{{ item }}"
+    mode: "0755"
+  loop:
+    - backup_verify.sh
+    - docker_health.sh
+  ignore_errors: true
+
+- name: Check if homelab git repo exists
+  ansible.builtin.stat:
+    path: "{{ homelab_root }}/.git"
+  register: git_repo
+
+- name: Initialize git repo if not present
+  ansible.builtin.command:
+    cmd: git init
+    chdir: "{{ homelab_root }}"
+  when: not git_repo.stat.exists
+  changed_when: true
+
+- name: Install Python requirements for system-monitor
+  ansible.builtin.pip:
+    requirements: "{{ homelab_root }}/projects/system-monitor/requirements.txt"
+    virtualenv: "{{ homelab_root }}/projects/system-monitor/.venv"
+    virtualenv_command: python3 -m venv
+  ignore_errors: true
+
+- name: Install Python requirements for backup-auditor
+  ansible.builtin.pip:
+    requirements: "{{ homelab_root }}/projects/backup-auditor/requirements.txt"
+    virtualenv: "{{ homelab_root }}/projects/backup-auditor/.venv"
+    virtualenv_command: python3 -m venv
+  ignore_errors: true

@@ -1,0 +1,181 @@
+{
+  "report_generated_at": "2026-05-03T03:56:03+00:00",
+  "summary": {
+    "internal_records": 200,
+    "vendor_records": 200,
+    "correlated_records": 200,
+    "correlation_rate": 1.0,
+    "high_failure_findings_count": 1,
+    "machine_anomaly_findings_count": 1,
+    "missing_correlation_internal_only": 0,
+    "missing_correlation_vendor_only": 0
+  },
+  "config_used": {
+    "thresholds": {
+      "failure_rate_warning": 0.1,
+      "failure_rate_critical": 0.25,
+      "min_sample_size": 5
+    }
+  },
+  "failure_rates_by_machine": [
+    {
+      "job_type": "MILL_OP",
+      "machine_id": "MILL-03",
+      "total": 15,
+      "failures": 15,
+      "failure_rate": 1.0,
+      "vendor_errors": {
+        "E_SPINDLE_FAULT": 15
+      }
+    },
+    {
+      "job_type": "DRILL_OP",
+      "machine_id": "DRILL-03",
+      "total": 8,
+      "failures": 1,
+      "failure_rate": 0.125,
+      "vendor_errors": {}
+    },
+    {
+      "job_type": "ASSEMBLE_OP",
+      "machine_id": "ASSY-03",
+      "total": 9,
+      "failures": 1,
+      "failure_rate": 0.1111,
+      "vendor_errors": {
+        "E_TORQUE_LIMIT": 1
+      }
+    },
+    {
+      "job_type": "DRILL_OP",
+      "machine_id": "DRILL-02",
+      "total": 9,
+      "failures": 1,
+      "failure_rate": 0.1111,
+      "vendor_errors": {}
+    },
+    {
+      "job_type": "INSPECT_OP",
+      "machine_id": "CMM-02",
+      "total": 21,
+      "failures": 2,
+      "failure_rate": 0.0952,
+      "vendor_errors": {
+        "E_PROBE_ERR": 1
+      }
+    },
+    {
+      "job_type": "MILL_OP",
+      "machine_id": "MILL-01",
+      "total": 11,
+      "failures": 1,
+      "failure_rate": 0.0909,
+      "vendor_errors": {
+        "E_SPINDLE_FAULT": 1
+      }
+    },
+    {
+      "job_type": "INSPECT_OP",
+      "machine_id": "CMM-01",
+      "total": 22,
+      "failures": 2,
+      "failure_rate": 0.0909,
+      "vendor_errors": {}
+    },
+    {
+      "job_type": "MILL_OP",
+      "machine_id": "MILL-04",
+      "total": 12,
+      "failures": 1,
+      "failure_rate": 0.0833,
+      "vendor_errors": {}
+    },
+    {
+      "job_type": "WELD_OP",
+      "machine_id": "WELD-01",
+      "total": 24,
+      "failures": 2,
+      "failure_rate": 0.0833,
+      "vendor_errors": {
+        "E_ARC_FAULT": 1
+      }
+    },
+    {
+      "job_type": "MILL_OP",
+      "machine_id": "MILL-02",
+      "total": 17,
+      "failures": 1,
+      "failure_rate": 0.0588,
+      "vendor_errors": {
+        "E_OVERLOAD": 1
+      }
+    },
+    {
+      "job_type": "WELD_OP",
+      "machine_id": "WELD-02",
+      "total": 18,
+      "failures": 1,
+      "failure_rate": 0.0556,
+      "vendor_errors": {
+        "E_GAS_PRESSURE": 1
+      }
+    },
+    {
+      "job_type": "ASSEMBLE_OP",
+      "machine_id": "ASSY-02",
+      "total": 11,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "vendor_errors": {}
+    },
+    {
+      "job_type": "DRILL_OP",
+      "machine_id": "DRILL-01",
+      "total": 10,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "vendor_errors": {}
+    },
+    {
+      "job_type": "ASSEMBLE_OP",
+      "machine_id": "ASSY-01",
+      "total": 13,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "vendor_errors": {}
+    }
+  ],
+  "findings": {
+    "high_failure_rate": [
+      {
+        "job_type": "MILL_OP",
+        "machine_id": "MILL-03",
+        "sample_count": 15,
+        "failure_count": 15,
+        "failure_rate": 1.0,
+        "threshold_used": 0.25
+      }
+    ],
+    "missing_correlations": {
+      "in_internal_only": [],
+      "in_vendor_only": [],
+      "matched_count": 200,
+      "internal_total": 200,
+      "vendor_total": 200,
+      "correlation_rate": 1.0
+    },
+    "machine_anomalies": [
+      {
+        "machine_id": "MILL-03",
+        "job_type": "MILL_OP",
+        "failure_rate": 1.0,
+        "fleet_median_rate": 0.0833,
+        "fleet_mad": 0.0076,
+        "z_score": 81.61,
+        "sample_count": 15,
+        "failure_count": 15,
+        "dominant_error_code": "E_SPINDLE_FAULT"
+      }
+    ]
+  }
+}

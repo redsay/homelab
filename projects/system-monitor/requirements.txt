@@ -1,0 +1,4 @@
+psutil==5.9.8
+prometheus-client==0.20.0
+requests==2.31.0
+PyYAML==6.0.1

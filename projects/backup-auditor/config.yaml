@@ -1,0 +1,22 @@
+service:
+  report_dir: "/app/reports"
+  schedule: "0 6 * * *"   # Run daily at 06:00 (used by supercronic when CMD is overridden)
+
+backup_jobs:
+  log_directory: "/app/sample_logs"
+  log_pattern: "*.log"
+
+thresholds:
+  max_days_since_last_run: 1          # Flag jobs not run in this many days
+  min_backup_size_gb: 0.001           # Flag jobs with unusually small backups (1 MB)
+  warning_failure_rate_percent: 10    # Warn if failure rate exceeds this
+  critical_failure_rate_percent: 25   # Critical if failure rate exceeds this
+  # Jobs whose names contain any of these tokens are expected to produce very
+  # small backups (config files, etc.) and are excluded from the size check.
+  small_job_name_tokens:
+    - PLCConfigs
+    - PLC
+
+notifications:
+  webhook_url: ""    # Set to a Slack or Teams incoming webhook URL to enable
+  webhook_enabled: false

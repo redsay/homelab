@@ -1,0 +1,41 @@
+2024-05-03 01:00:03 [INFO] Backup job starting: job_name="ProductionDB-Full" type="Full" schedule="Daily" status="Running"
+2024-05-03 01:00:03 [INFO] VSS snapshot requested: job_name="ProductionDB-Full" volume="E:\MES_DATA" snapshot_provider="Microsoft Software Shadow Copy"
+2024-05-03 01:02:09 [INFO] VSS snapshot created successfully: job_name="ProductionDB-Full" snapshot_id="e52c8a44-9fb3-4d28-bc1a-d0071fff2209"
+2024-05-03 01:02:10 [INFO] Data transfer started: job_name="ProductionDB-Full" target="\\BACKUP-NAS-01\backups\mes"
+2024-05-03 02:19:44 [INFO] Backup job completed: job_name="ProductionDB-Full" type="Full" schedule="Daily" status="Success" duration_minutes=77 size_gb=186.08 files_transferred=1 verify_status="Passed"
+2024-05-03 02:19:44 [INFO] Checksum verification passed: job_name="ProductionDB-Full" algorithm="SHA-256"
+
+2024-05-03 02:20:00 [INFO] Backup job starting: job_name="QualitySystem-Full" type="Full" schedule="Daily" status="Running"
+2024-05-03 02:20:00 [INFO] VSS snapshot requested: job_name="QualitySystem-Full" volume="F:\QUALITY_DATA" snapshot_provider="Microsoft Software Shadow Copy"
+2024-05-03 02:21:48 [INFO] VSS snapshot created successfully: job_name="QualitySystem-Full" snapshot_id="17bb5d03-ec44-4702-9ff2-c8f139b2e834"
+2024-05-03 02:21:49 [INFO] Data transfer started: job_name="QualitySystem-Full" target="\\BACKUP-NAS-01\backups\quality"
+2024-05-03 03:07:55 [INFO] Backup job completed: job_name="QualitySystem-Full" type="Full" schedule="Daily" status="Success" duration_minutes=47 size_gb=95.01 files_transferred=1 verify_status="Passed"
+2024-05-03 03:07:55 [INFO] Checksum verification passed: job_name="QualitySystem-Full" algorithm="SHA-256"
+
+2024-05-03 03:10:00 [INFO] Backup job starting: job_name="ERPDatabase-Full" type="Full" schedule="Daily" status="Running"
+2024-05-03 03:10:00 [INFO] VSS snapshot requested: job_name="ERPDatabase-Full" volume="G:\ERP_DATA" snapshot_provider="Microsoft Software Shadow Copy"
+2024-05-03 03:12:33 [INFO] VSS snapshot created successfully: job_name="ERPDatabase-Full" snapshot_id="8c29f611-3a5e-4f81-99b0-77e1044de390"
+2024-05-03 03:12:34 [INFO] Data transfer started: job_name="ERPDatabase-Full" target="\\BACKUP-NAS-01\backups\erp"
+2024-05-03 05:08:17 [INFO] Backup job completed: job_name="ERPDatabase-Full" type="Full" schedule="Daily" status="Success" duration_minutes=118 size_gb=426.14 files_transferred=1 verify_status="Passed"
+2024-05-03 05:08:17 [INFO] Checksum verification passed: job_name="ERPDatabase-Full" algorithm="SHA-256"
+
+2024-05-03 05:10:00 [INFO] Backup job starting: job_name="PLCConfigs-Incremental" type="Incremental" schedule="Daily" status="Running"
+2024-05-03 05:10:00 [INFO] Enumerating changed configuration files: job_name="PLCConfigs-Incremental" source="\\PLC-MGMT-01\configs"
+2024-05-03 05:10:05 [INFO] Changed files detected: job_name="PLCConfigs-Incremental" changed_count=1
+2024-05-03 05:10:05 [INFO] Data transfer started: job_name="PLCConfigs-Incremental" target="\\BACKUP-NAS-01\backups\plc-configs"
+2024-05-03 05:10:07 [INFO] Backup job completed: job_name="PLCConfigs-Incremental" type="Incremental" schedule="Daily" status="Success" duration_minutes=1 size_gb=0.00012 files_transferred=1 verify_status="Passed"
+
+2024-05-03 05:15:00 [INFO] Backup job starting: job_name="VMware-ManufacturingHosts-Images" type="Full" schedule="Daily" status="Running"
+2024-05-03 05:15:00 [INFO] Connecting to vCenter: job_name="VMware-ManufacturingHosts-Images" vcenter="vcenter-mfg.local"
+2024-05-03 05:15:04 [INFO] Attempting to reach backup target: job_name="VMware-ManufacturingHosts-Images" target="\\BACKUP-NAS-01\backups\vmware"
+2024-05-03 05:15:34 [WARNING] Target share unreachable, retrying: job_name="VMware-ManufacturingHosts-Images" target="\\BACKUP-NAS-01\backups\vmware" attempt=1
+2024-05-03 05:16:04 [WARNING] Target share unreachable, retrying: job_name="VMware-ManufacturingHosts-Images" target="\\BACKUP-NAS-01\backups\vmware" attempt=2
+2024-05-03 05:16:34 [WARNING] Target share unreachable, retrying: job_name="VMware-ManufacturingHosts-Images" target="\\BACKUP-NAS-01\backups\vmware" attempt=3
+2024-05-03 05:17:04 [ERROR] Backup target unreachable after all retries: job_name="VMware-ManufacturingHosts-Images" target="\\BACKUP-NAS-01\backups\vmware" error_detail="Cannot connect to UNC path. The network path was not found. (0x80070035)"
+2024-05-03 05:17:04 [ERROR] Backup job failed: job_name="VMware-ManufacturingHosts-Images" type="Full" schedule="Daily" status="Failed" duration_minutes=2 size_gb=0 files_transferred=0 verify_status="N/A" failure_reason="Backup target \\BACKUP-NAS-01\backups\vmware unreachable — network path not found (0x80070035). Verify NAS connectivity and SMB share availability."
+
+2024-05-03 05:20:00 [INFO] Backup job starting: job_name="FileServer-Incremental" type="Incremental" schedule="Daily" status="Running"
+2024-05-03 05:20:00 [INFO] Enumerating changed files: job_name="FileServer-Incremental" source="\\FILESVR-01\shares"
+2024-05-03 05:20:14 [INFO] Changed files detected: job_name="FileServer-Incremental" changed_count=3977
+2024-05-03 05:20:14 [INFO] Data transfer started: job_name="FileServer-Incremental" target="\\BACKUP-NAS-01\backups\fileserver"
+2024-05-03 05:36:08 [INFO] Backup job completed: job_name="FileServer-Incremental" type="Incremental" schedule="Daily" status="Success" duration_minutes=16 size_gb=18.41 files_transferred=3977 verify_status="Passed"

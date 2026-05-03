@@ -1,0 +1,65 @@
+---
+- name: Start monitoring stack
+  community.docker.docker_compose_v2:
+    project_src: "{{ homelab_root }}/docker/monitoring"
+    state: present
+  register: monitoring_result
+
+- name: Wait for Prometheus to be healthy
+  ansible.builtin.uri:
+    url: "http://localhost:9090/-/healthy"
+    method: GET
+    status_code: 200
+  register: prometheus_health
+  retries: 12
+  delay: 5
+  until: prometheus_health.status == 200
+
+- name: Wait for Grafana to be healthy
+  ansible.builtin.uri:
+    url: "http://localhost:3000/api/health"
+    method: GET
+    status_code: 200
+  register: grafana_health
+  retries: 12
+  delay: 5
+  until: grafana_health.status == 200
+
+- name: Start log pipeline stack
+  community.docker.docker_compose_v2:
+    project_src: "{{ homelab_root }}/docker/log-pipeline"
+    state: present
+  register: logpipeline_result
+
+- name: Wait for Loki to be ready
+  ansible.builtin.uri:
+    url: "http://localhost:3100/ready"
+    method: GET
+    status_code: 200
+  register: loki_health
+  retries: 12
+  delay: 5
+  until: loki_health.status == 200
+
+- name: Build and start system-monitor
+  community.docker.docker_compose_v2:
+    project_src: "{{ homelab_root }}/projects/system-monitor"
+    state: present
+    build: always
+  register: sysmon_result
+
+- name: Build and start manufacturing-data-sim
+  community.docker.docker_compose_v2:
+    project_src: "{{ homelab_root }}/projects/manufacturing-data-sim"
+    state: present
+    build: always
+  register: mfgsim_result
+
+- name: Verify all stacks are running
+  ansible.builtin.command: docker ps --format "table {{ '{{' }}.Names{{ '}}' }}\t{{ '{{' }}.Status{{ '}}' }}"
+  changed_when: false
+  register: docker_ps
+
+- name: Show running containers
+  ansible.builtin.debug:
+    msg: "{{ docker_ps.stdout_lines }}"

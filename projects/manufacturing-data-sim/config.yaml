@@ -1,0 +1,31 @@
+service:
+  host: "0.0.0.0"
+  port: 9200
+  tick_interval_seconds: 5
+  log_dir: "/app/logs"
+
+facility:
+  name: "Homelab Manufacturing Sim"
+  shift_hours: 8
+
+machines:
+  - id: "MILL-01"
+    type: "cnc_mill"
+    base_cycle_time_ms: 45000
+    fault_rate: 0.05
+  - id: "MILL-02"
+    type: "cnc_mill"
+    base_cycle_time_ms: 42000
+    fault_rate: 0.15
+  - id: "DRILL-01"
+    type: "cnc_drill"
+    base_cycle_time_ms: 18000
+    fault_rate: 0.05
+  - id: "WELD-01"
+    type: "robot_welder"
+    base_cycle_time_ms: 30000
+    fault_rate: 0.05
+  - id: "INSPECT-01"
+    type: "cmm_inspection"
+    base_cycle_time_ms: 12000
+    fault_rate: 0.03

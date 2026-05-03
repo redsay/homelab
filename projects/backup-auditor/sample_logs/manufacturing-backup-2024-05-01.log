@@ -1,0 +1,41 @@
+2024-05-01 01:00:03 [INFO] Backup job starting: job_name="ProductionDB-Full" type="Full" schedule="Daily" status="Running"
+2024-05-01 01:00:03 [INFO] VSS snapshot requested: job_name="ProductionDB-Full" volume="E:\MES_DATA" snapshot_provider="Microsoft Software Shadow Copy"
+2024-05-01 01:02:17 [INFO] VSS snapshot created successfully: job_name="ProductionDB-Full" snapshot_id="f3a8c2d1-44e0-4b11-9c7a-0029a1e88b01"
+2024-05-01 01:02:18 [INFO] Data transfer started: job_name="ProductionDB-Full" target="\\BACKUP-NAS-01\backups\mes"
+2024-05-01 02:14:55 [INFO] Backup job completed: job_name="ProductionDB-Full" type="Full" schedule="Daily" status="Success" duration_minutes=74 size_gb=183.42 files_transferred=1 verify_status="Passed"
+2024-05-01 02:14:55 [INFO] Checksum verification passed: job_name="ProductionDB-Full" algorithm="SHA-256"
+
+2024-05-01 02:15:00 [INFO] Backup job starting: job_name="QualitySystem-Full" type="Full" schedule="Daily" status="Running"
+2024-05-01 02:15:00 [INFO] VSS snapshot requested: job_name="QualitySystem-Full" volume="F:\QUALITY_DATA" snapshot_provider="Microsoft Software Shadow Copy"
+2024-05-01 02:16:44 [INFO] VSS snapshot created successfully: job_name="QualitySystem-Full" snapshot_id="a91d04f7-c231-4e09-b3ad-77de2f00c819"
+2024-05-01 02:16:45 [INFO] Data transfer started: job_name="QualitySystem-Full" target="\\BACKUP-NAS-01\backups\quality"
+2024-05-01 03:02:11 [INFO] Backup job completed: job_name="QualitySystem-Full" type="Full" schedule="Daily" status="Success" duration_minutes=47 size_gb=94.17 files_transferred=1 verify_status="Passed"
+2024-05-01 03:02:11 [INFO] Checksum verification passed: job_name="QualitySystem-Full" algorithm="SHA-256"
+
+2024-05-01 03:05:00 [INFO] Backup job starting: job_name="ERPDatabase-Full" type="Full" schedule="Daily" status="Running"
+2024-05-01 03:05:00 [INFO] VSS snapshot requested: job_name="ERPDatabase-Full" volume="G:\ERP_DATA" snapshot_provider="Microsoft Software Shadow Copy"
+2024-05-01 03:07:22 [INFO] VSS snapshot created successfully: job_name="ERPDatabase-Full" snapshot_id="bb45a1e2-8dc0-4f38-a2e7-991630fcda04"
+2024-05-01 03:07:23 [INFO] Data transfer started: job_name="ERPDatabase-Full" target="\\BACKUP-NAS-01\backups\erp"
+2024-05-01 04:58:44 [INFO] Backup job completed: job_name="ERPDatabase-Full" type="Full" schedule="Daily" status="Success" duration_minutes=113 size_gb=421.85 files_transferred=1 verify_status="Passed"
+2024-05-01 04:58:44 [INFO] Checksum verification passed: job_name="ERPDatabase-Full" algorithm="SHA-256"
+
+2024-05-01 05:00:00 [INFO] Backup job starting: job_name="PLCConfigs-Incremental" type="Incremental" schedule="Daily" status="Running"
+2024-05-01 05:00:00 [INFO] Enumerating changed configuration files: job_name="PLCConfigs-Incremental" source="\\PLC-MGMT-01\configs"
+2024-05-01 05:00:08 [INFO] Changed files detected: job_name="PLCConfigs-Incremental" changed_count=3
+2024-05-01 05:00:08 [INFO] Data transfer started: job_name="PLCConfigs-Incremental" target="\\BACKUP-NAS-01\backups\plc-configs"
+2024-05-01 05:00:11 [INFO] Backup job completed: job_name="PLCConfigs-Incremental" type="Incremental" schedule="Daily" status="Success" duration_minutes=1 size_gb=0.00187 files_transferred=3 verify_status="Passed"
+
+2024-05-01 05:05:00 [INFO] Backup job starting: job_name="VMware-ManufacturingHosts-Images" type="Full" schedule="Daily" status="Running"
+2024-05-01 05:05:00 [INFO] Connecting to vCenter: job_name="VMware-ManufacturingHosts-Images" vcenter="vcenter-mfg.local"
+2024-05-01 05:05:04 [INFO] vCenter connection established: job_name="VMware-ManufacturingHosts-Images" hosts_found=6
+2024-05-01 05:05:05 [INFO] Creating VM snapshots: job_name="VMware-ManufacturingHosts-Images" vm_count=14
+2024-05-01 05:07:33 [INFO] All VM snapshots created: job_name="VMware-ManufacturingHosts-Images"
+2024-05-01 05:07:33 [INFO] Data transfer started: job_name="VMware-ManufacturingHosts-Images" target="\\BACKUP-NAS-01\backups\vmware"
+2024-05-01 08:44:19 [INFO] Backup job completed: job_name="VMware-ManufacturingHosts-Images" type="Full" schedule="Daily" status="Success" duration_minutes=219 size_gb=1847.33 files_transferred=14 verify_status="Passed"
+2024-05-01 08:44:19 [INFO] Snapshot removal completed: job_name="VMware-ManufacturingHosts-Images" removed_count=14
+
+2024-05-01 08:45:00 [INFO] Backup job starting: job_name="FileServer-Incremental" type="Incremental" schedule="Daily" status="Running"
+2024-05-01 08:45:00 [INFO] Enumerating changed files: job_name="FileServer-Incremental" source="\\FILESVR-01\shares"
+2024-05-01 08:45:22 [INFO] Changed files detected: job_name="FileServer-Incremental" changed_count=4812
+2024-05-01 08:45:22 [INFO] Data transfer started: job_name="FileServer-Incremental" target="\\BACKUP-NAS-01\backups\fileserver"
+2024-05-01 09:03:17 [INFO] Backup job completed: job_name="FileServer-Incremental" type="Incremental" schedule="Daily" status="Success" duration_minutes=18 size_gb=22.64 files_transferred=4812 verify_status="Passed"

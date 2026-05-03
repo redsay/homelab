@@ -1,0 +1,33 @@
+service:
+  host: "0.0.0.0"
+  port: 8000
+  poll_interval_seconds: 30
+  log_dir: "/app/logs"
+
+thresholds:
+  cpu_warning_percent: 75
+  cpu_critical_percent: 90
+  ram_warning_percent: 80
+  ram_critical_percent: 95
+  disk_warning_percent: 80
+  disk_critical_percent: 90
+
+health_checks:
+  urls:
+    - name: "Prometheus"
+      url: "http://prometheus:9090/-/healthy"
+      timeout_seconds: 5
+    - name: "Grafana"
+      url: "http://grafana:3000/api/health"
+      timeout_seconds: 5
+    - name: "Loki"
+      url: "http://loki:3100/ready"
+      timeout_seconds: 5
+    - name: "Alertmanager"
+      url: "http://alertmanager:9093/-/healthy"
+      timeout_seconds: 5
+
+required_processes:
+  - "prometheus"
+  - "grafana"
+  - "python3"

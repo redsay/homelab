@@ -1,0 +1,8 @@
+internal_log_path: sample_data/internal_logs.json
+vendor_log_path: sample_data/vendor_logs.json
+output_dir: sample_data/
+
+thresholds:
+  failure_rate_warning: 0.10
+  failure_rate_critical: 0.25
+  min_sample_size: 5

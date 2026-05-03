@@ -1,0 +1,7 @@
+services:
+  log-correlator:
+    build: .
+    container_name: log-correlator
+    volumes:
+      - ./sample_data:/app/sample_data
+    command: ["python", "correlator.py", "--config", "config.yaml"]

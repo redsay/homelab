@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  backup-auditor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: backup-auditor
+    restart: on-failure
+
+    environment:
+      # Path inside the container where the config file is mounted.
+      # Override here if you mount the config to a different path.
+      CONFIG_PATH: /app/config.yaml
+
+    volumes:
+      # Backup log files to audit (read-only from the container's perspective)
+      - ./sample_logs:/app/sample_logs:ro
+
+      # HTML reports output directory (writable)
+      - ./reports:/app/reports
+
+      # Configuration file (read-only)
+      - ./config.yaml:/app/config.yaml:ro
+
+    # Optional: write container stdout/stderr to a local log file via the
+    # json-file driver with rotation so the host disk is not exhausted.
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
